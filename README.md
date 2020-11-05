@@ -2,5 +2,5 @@
 
 ### Estruturas de dados usando Java
 
-Repositório criado para armazenar os exercícos da disciplina Estrutura de Dados.
+Repositório criado para armazenar os exercícios da disciplina Estrutura de Dados.
 
