@@ -1,20 +1,23 @@
-public class BubbleSort {
-   public void bubble(int v[]) {
-      int ini = 1, fim, chg;
-      while (ini < v.length) {
-         fim = v.length - 1;
-         while (fim >= ini) {
-            if (v[fim-1] > v[fim]) {
-               chg      = v[fim-1];
-               v[fim-1] = v[fim];
-               v[fim]   = chg;
+public class SelectionSort {
+   public void selection(int v[]) {
+      int ini = 0, sch, chg, men;
+      while (ini < v.length - 1) {
+         chg = ini;
+         men = v[ini];
+         sch = ini + 1;
+         while (sch < v.length) {
+            if (v[sch] < men) {
+               chg = sch;
+               men = v[sch];
             }
-            fim--;
+            sch++;
          }
+         v[chg] = v[ini];
+         v[ini] = men;
          ini++;
       }
    }
-
+   
    // exibe parte do vetor
    public String showVetor(int v[]) {
       int i;
