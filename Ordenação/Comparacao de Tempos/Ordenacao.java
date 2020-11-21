@@ -34,7 +34,7 @@ public class Ordenacao {
          ini++;
       }
    }
-   // ordenacao por Insercao
+   // ordenacao por Inserção
    public void insertion(int v []) {
       int ini = 1, chg, men;
       while (ini < v.length) {
